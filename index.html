@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <!-- Common -->
+    <link rel="stylesheet" href="/styles/common.css" />
+    <!-- Topbar -->
+    <link rel="stylesheet" href="/styles/topbar.css" />
+    <!-- Video -->
+    <link rel="stylesheet" href="/styles/video.css" />
+    <!-- SideBar -->
+    <link rel="stylesheet" href="/styles/sidebar.css" />
+  </head>
+  <body>
+    <!-- ======================== TOPBAR ======================== -->
+    <div class="top-bar-container">
+      <!-- -------------------- topbar start container -------------------- -->
+      <div class="top-bar-left-container">
+        <!-- Hemburger menu -->
+        <img
+          src="/assets/icons/hamburger-menu.svg"
+          alt="Menu"
+          class="icon-hamburger-menu"
+        />
+        <!-- youtube logo container -->
+        <div class="yt-logo-container">
+          <!-- youtube log item -->
+          <div class="yt-logo-item">
+            <!-- youtube image -->
+            <img
+              src="/assets/icons/youtube-logo.svg"
+              alt="Youtube logo"
+              class="yt-logo"
+            />
+            <!-- span country code -->
+            <span class="country-code">IN</span>
+          </div>
+          <!-- YOUTUBE HOME tooltip on youtube logo -->
+          <div class="tooltip">YouTube Home</div>
+        </div>
+      </div>
+
+      <!-- -------------------- topbar center container -------------------- -->
+      <div class="top-bar-middle-container">
+        <div class="middle-item">
+          <!-- search container (input and search button) -->
+          <div class="search-container">
+            <!-- input container -->
+            <div class="input-container">
+              <!-- text input -->
+              <input type="text" placeholder="Search" class="input-search" />
+            </div>
+            <!-- search button container -->
+            <div class="btn-search-container">
+              <!-- button search -->
+              <button class="btn-search">
+                <!-- image search -->
+                <img src="/assets/icons/search.svg" alt="" class="img-search" />
+                <!-- Search Tooltip -->
+                <div class="tooltip">Search</div>
+              </button>
+            </div>
+          </div>
+          <!-- voice container -->
+          <div class="voice-container">
+            <!-- button voice -->
+            <button class="btn-voice">
+              <!-- image voice -->
+              <img
+                src="/assets/icons/voice-search-icon.svg"
+                alt=""
+                class="img-voice"
+              />
+              <!-- Search with your voice Tooltip -->
+              <div class="tooltip">Search with your voice</div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------------- topbar right container -------------------- -->
+      <div class="top-bar-right-container">
+        <div class="right-item-container">
+          <!-- upload icon container -->
+          <div class="right-icon">
+            <!-- upload icon -->
+            <img
+              src="/assets/icons/upload.svg"
+              alt="Upload icon"
+              class="icon-upload"
+            />
+            <!-- create tooltip -->
+            <div class="tooltip">Create</div>
+          </div>
+          <!-- notification icon container -->
+          <div class="right-icon">
+            <!-- notification icon -->
+            <img
+              src="/assets/icons/notifications.svg"
+              alt="Notifications icon"
+              class="icon-notifications"
+            />
+            <!-- notification tooltip -->
+            <div class="tooltip">Notifications</div>
+          </div>
+          <!-- channel profile container -->
+          <button class="right-icon-channal">
+            <!-- channel profile image -->
+            <img
+              src="/assets/icons/my-channel.png"
+              alt="My channal"
+              class="my-channal"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================== SIDEBAR ======================== -->
+
+    <!-- -------------------- sidebar container -------------------- -->
+    <div class="sidebar-container">
+      <!-- Home item container -->
+      <div class="sidebar-item-container">
+        <!-- home icon -->
+        <img src="/assets/icons/home.svg" alt="" class="img-sidebar" />
+        <!-- home text -->
+        <div class="txt-sidebar">Home</div>
+        <!-- home tooltip -->
+        <div class="tooltip">Home</div>
+      </div>
+
+      <!-- Explore item container -->
+      <div class="sidebar-item-container">
+        <!-- explore icon -->
+        <img src="/assets/icons/explore.svg" alt="" class="img-sidebar" />
+        <!-- explore text -->
+        <div class="txt-sidebar">Explore</div>
+        <!-- explore tooltip -->
+        <div class="tooltip">Explore</div>
+      </div>
+
+      <!-- Shorts item container -->
+      <div class="sidebar-item-container">
+        <!-- shorts icon -->
+        <img
+          src="/assets/icons/youtube-shorts.svg"
+          alt=""
+          class="img-sidebar"
+        />
+        <!-- shorts text -->
+        <div class="txt-sidebar">Shorts</div>
+        <!-- shorts tooltip -->
+        <div class="tooltip">Shorts</div>
+      </div>
+
+      <!-- Subscriptions item container -->
+      <div class="sidebar-item-container">
+        <!-- subscriptions icon -->
+        <img src="/assets/icons/subscriptions.svg" alt="" class="img-sidebar" />
+        <!-- subscriptions text-->
+        <div class="txt-sidebar">Subscriptions</div>
+        <!-- subscriptions tooltip -->
+        <div class="tooltip">Subscriptions</div>
+      </div>
+
+      <!-- Library item container -->
+      <div class="sidebar-item-container">
+        <!-- library icon -->
+        <img src="/assets/icons/library.svg" alt="" class="img-sidebar" />
+        <!-- library text -->
+        <div class="txt-sidebar">Library</div>
+        <!-- library tooltip -->
+        <div class="tooltip">Library</div>
+      </div>
+    </div>
+
+    <!-- ======================== VIDEO GRID ======================== -->
+    <div class="video-container">
+      <!-- -------------------- video item 1 -------------------- -->
+      <div class="video-item">
+        <!-- thumbnail container -->
+        <div class="thumbnail-container">
+          <!-- thumbnail image -->
+          <img
+            src="/assets/thumbnails/thumbnail-1.png"
+            alt=""
+            class="thumbnail"
+          />
+          <!-- thumbnail duration tooltip -->
+          <div class="duration">10:09</div>
+          <!-- thumbnail hovering text tooltip -->
+          <div class="thumb-tooltip">Keep hovering to play</div>
+
+          <!-- --------------- hover player container ---------------  -->
+          <div class="hover-play-container">
+            <!-- hover video item 1 -->
+            <div class="hover-video-item">
+              <!-- hover thumbnail container -->
+              <div class="hover-thumbnail-container">
+                <!-- video 1 -->
+                <video
+                  src="/assets/videos/video-1.mp4"
+                  class="hover-thumbnail"
+                  autoplay
+                  muted
+                  loop
+                ></video>
+              </div>
+              <!-- hover video info container (channel-picture, name, desc, views, date) -->
+              <div class="hover-video-info-container">
+                <div class="profile-container">
+                  <img
+                    src="/assets/channel/channel-1.jpg"
+                    alt=""
+                    class="channel-profile"
+                  />
+                </div>
+                <!-- hover details container -->
+                <div class="hover-info-container">
+                  <p class="description">
+                    How I Would Learn To Code (If I Could Start Over)
+                  </p>
+                  <!-- hover name container -->
+                  <div class="name-container">
+                    <p class="channel-name">Namanh Kapur</p>
+                    <img
+                      src="/assets/icons/verified.png"
+                      alt=""
+                      class="verified"
+                    />
+                  </div>
+                  <!-- hover stats container -->
+                  <div class="hover-stat-container">
+                    <p class="views">2.3M views</p>
+                    <p class="dot">&#183;</p>
+                    <p class="time">3 month ago</p>
+                  </div>
+                </div>
+                <img src="/assets/icons/options.png" alt="" class="options" />
+              </div>
+
+              <div class="hover-button-container">
+                <button class="watch-later">
+                  <img src="/assets/icons/watch-later.png" alt="" />
+                  <p>WATCH LATER</p>
+                </button>
+                <button class="add-to-queue">
+                  <img src="/assets/icons/queue.png" alt="" />
+                  <p>ADD TO QUEUE</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- video info container (channel-profile, descriptions, channel-name, views, date) -->
+        <div class="video-info-container">
+          <!-- channel profile container -->
+          <div class="profile-container">
+            <!-- channel image -->
+            <img
+              src="/assets/channel/channel-1.jpg"
+              alt=""
+              class="channel-profile"
+            />
+          </div>
+          <!-- video details container -->
+          <div class="info-container">
+            <!-- video description -->
+            <p class="description">
+              How I Would Learn To Code (If I Could Start Over)
+            </p>
+            <!-- name container (channel-name, verified logo) -->
+            <div class="name-container">
+              <!-- channel name -->
+              <p class="channel-name">Namanh Kapur</p>
+              <!-- verified icon -->
+              <img src="/assets/icons/verified.png" alt="" class="verified" />
+            </div>
+
+            <!-- stats container -->
+            <div class="stat-container">
+              <!-- video views -->
+              <p class="views">2.3M views</p>
+              <!-- html entity middle dot -->
+              <p class="dot">&#183;</p>
+              <!-- video date -->
+              <p class="time">3 month ago</p>
+            </div>
+          </div>
+          <!-- options tooltip -->
+          <img src="/assets/icons/options.png" alt="" class="options" />
+        </div>
+      </div>
+
+      <!-- -------------------- video item 2 -------------------- -->
+      <div class="video-item">
+        <div class="thumbnail-container">
+          <img
+            src="/assets/thumbnails/thumbnail-2.png"
+            alt=""
+            class="thumbnail"
+          />
+          <div class="duration">4:49</div>
+          <div class="thumb-tooltip">Keep hovering to play</div>
+        </div>
+        <div class="video-info-container">
+          <div class="profile-container">
+            <img
+              src="/assets/channel/channel-2.jpg"
+              alt=""
+              class="channel-profile"
+            />
+          </div>
+          <div class="info-container">
+            <p class="description">The Beauty Of Interstellar</p>
+            <div class="name-container">
+              <p class="channel-name">The Beauty Of</p>
+            </div>
+
+            <div class="stat-container">
+              <p class="views">145K views</p>
+              <p class="dot">&#183;</p>
+              <p class="time">3 weeks ago</p>
+            </div>
+          </div>
+          <img src="/assets/icons/options.png" alt="" class="options" />
+        </div>
+      </div>
+
+      <!-- -------------------- video item 3 -------------------- -->
+      <div class="video-item">
+        <div class="thumbnail-container">
+          <img
+            src="/assets/thumbnails/thumbnail-3.png"
+            alt=""
+            class="thumbnail"
+          />
+          <div class="duration">12:23</div>
+          <div class="thumb-tooltip">Keep hovering to play</div>
+        </div>
+        <div class="video-info-container">
+          <div class="profile-container">
+            <img
+              src="/assets/channel/channel-3.jpg"
+              alt=""
+              class="channel-profile"
+            />
+          </div>
+          <div class="info-container">
+            <p class="description">
+              Solidity Full Course Overview | Solidity Full Tutorial | Solidity
+              ...
+            </p>
+            <div class="name-container">
+              <p class="channel-name">Code Eater</p>
+            </div>
+
+            <div class="stat-container">
+              <p class="views">35K views</p>
+              <p class="dot">&#183;</p>
+              <p class="time">1 year ago</p>
+            </div>
+          </div>
+          <img src="/assets/icons/options.png" alt="" class="options" />
+        </div>
+      </div>
+
+      <!-- -------------------- video item 4 -------------------- -->
+      <div class="video-item">
+        <div class="thumbnail-container">
+          <img
+            src="/assets/thumbnails/thumbnail-4.png"
+            alt=""
+            class="thumbnail"
+          />
+          <div class="duration">4:49</div>
+          <div class="thumb-tooltip">Keep hovering to play</div>
+        </div>
+        <div class="video-info-container">
+          <div class="profile-container">
+            <img
+              src="/assets/channel/channel-4.jpg"
+              alt=""
+              class="channel-profile"
+            />
+          </div>
+          <div class="info-container">
+            <p class="description">Explain System out println in Java</p>
+            <div class="name-container">
+              <p class="channel-name">Interview Mania</p>
+            </div>
+
+            <div class="stat-container">
+              <p class="views">1.3K views</p>
+              <p class="dot">&#183;</p>
+              <p class="time">2 months ago</p>
+            </div>
+          </div>
+          <img src="/assets/icons/options.png" alt="" class="options" />
+        </div>
+      </div>
+
+      <!-- -------------------- video item 5 -------------------- -->
+      <div class="video-item">
+        <div class="thumbnail-container">
+          <img
+            src="/assets/thumbnails/thumbnail-5.png"
+            alt=""
+            class="thumbnail"
+          />
+          <div class="duration">4:01:19</div>
+          <div class="thumb-tooltip">Keep hovering to play</div>
+        </div>
+        <div class="video-info-container">
+          <div class="profile-container">
+            <img
+              src="/assets/channel/channel-5.jpg"
+              alt=""
+              class="channel-profile"
+            />
+          </div>
+          <div class="info-container">
+            <p class="description">C++ Tutorial for Beginners - Full Course</p>
+            <div class="name-container">
+              <p class="channel-name">freeCodeCamp.org</p>
+              <img src="/assets/icons/verified.png" alt="" class="verified" />
+            </div>
+
+            <div class="stat-container">
+              <p class="views">9.5M views</p>
+              <p class="dot">&#183;</p>
+              <p class="time">3 year ago</p>
+            </div>
+          </div>
+          <img src="/assets/icons/options.png" alt="" class="options" />
+        </div>
+      </div>
+
+      <!-- -------------------- video item 6 -------------------- -->
+      <div class="video-item">
+        <div class="thumbnail-container">
+          <img
+            src="/assets/thumbnails/thumbnail-6.png"
+            alt=""
+            class="thumbnail"
+          />
+          <div class="duration">6:14:07</div>
+          <div class="thumb-tooltip">Keep hovering to play</div>
+        </div>
+        <div class="video-info-container">
+          <div class="profile-container">
+            <img
+              src="/assets/channel/channel-6.jpg"
+              alt=""
+              class="channel-profile"
+            />
+          </div>
+          <div class="info-container">
+            <p class="description">
+              Python Tutorial - Python Full Course for Beginners
+            </p>
+            <div class="name-container">
+              <p class="channel-name">Programming with Mosh</p>
+              <img src="/assets/icons/verified.png" alt="" class="verified" />
+            </div>
+
+            <div class="stat-container">
+              <p class="views">28M views</p>
+              <p class="dot">&#183;</p>
+              <p class="time">3 year ago</p>
+            </div>
+          </div>
+          <img src="/assets/icons/options.png" alt="" class="options" />
+        </div>
+      </div>
+
+      <!-- -------------------- video item 7 -------------------- -->
+      <div class="video-item">
+        <div class="thumbnail-container">
+          <img
+            src="/assets/thumbnails/thumbnail-7.png"
+            alt=""
+            class="thumbnail"
+          />
+          <div class="duration">9:20</div>
+          <div class="thumb-tooltip">Keep hovering to play</div>
+        </div>
+        <div class="video-info-container">
+          <div class="profile-container">
+            <img
+              src="/assets/channel/channel-7.jpg"
+              alt=""
+              class="channel-profile"
+            />
+          </div>
+          <div class="info-container">
+            <p class="description">
+              How I Became a Software Engineer Without a CS Degree
+            </p>
+            <div class="name-container">
+              <p class="channel-name">Power Couple</p>
+            </div>
+
+            <div class="stat-container">
+              <p class="views">366K views</p>
+              <p class="dot">&#183;</p>
+              <p class="time">4 months ago</p>
+            </div>
+          </div>
+          <img src="/assets/icons/options.png" alt="" class="options" />
+        </div>
+      </div>
+
+      <!-- -------------------- video item 8 -------------------- -->
+      <div class="video-item">
+        <div class="thumbnail-container">
+          <img
+            src="/assets/thumbnails/thumbnail-8.png"
+            alt=""
+            class="thumbnail"
+          />
+          <div class="duration">10:30</div>
+          <div class="thumb-tooltip">Keep hovering to play</div>
+        </div>
+        <div class="video-info-container">
+          <div class="profile-container">
+            <img
+              src="/assets/channel/channel-8.jpg"
+              alt=""
+              class="channel-profile"
+            />
+          </div>
+          <div class="info-container">
+            <p class="description">
+              Computer Networking Full Course - OSI Model Deep Dive with Real
+              ...
+            </p>
+            <div class="name-container">
+              <p class="channel-name">Kunal Kushwaha</p>
+            </div>
+
+            <div class="stat-container">
+              <p class="views">3.9M views</p>
+              <p class="dot">&#183;</p>
+              <p class="time">1 year ago</p>
+            </div>
+          </div>
+          <img src="/assets/icons/options.png" alt="" class="options" />
+        </div>
+      </div>
+
+      <!-- -------------------- video item 9 -------------------- -->
+      <div class="video-item">
+        <div class="thumbnail-container">
+          <img
+            src="/assets/thumbnails/thumbnail-9.png"
+            alt=""
+            class="thumbnail"
+          />
+          <div class="duration">11:29</div>
+          <div class="thumb-tooltip">Keep hovering to play</div>
+        </div>
+        <div class="video-info-container">
+          <div class="profile-container">
+            <img
+              src="/assets/channel/channel-9.jpg"
+              alt=""
+              class="channel-profile"
+            />
+          </div>
+          <div class="info-container">
+            <p class="description">
+              Setting up new M1 Max MacBook Pro - Apps that I use for my app dev
+            </p>
+            <div class="name-container">
+              <p class="channel-name">devaslife</p>
+              <img src="/assets/icons/verified.png" alt="" class="verified" />
+            </div>
+
+            <div class="stat-container">
+              <p class="views">466K views</p>
+              <p class="dot">&#183;</p>
+              <p class="time">6 months ago</p>
+            </div>
+          </div>
+          <img src="/assets/icons/options.png" alt="" class="options" />
+        </div>
+      </div>
+
+      <!-- -------------------- video item 10 -------------------- -->
+      <div class="video-item">
+        <div class="thumbnail-container">
+          <img
+            src="/assets/thumbnails/thumbnail-10.png"
+            alt=""
+            class="thumbnail"
+          />
+          <div class="duration">15:00</div>
+          <div class="thumb-tooltip">Keep hovering to play</div>
+        </div>
+        <div class="video-info-container">
+          <div class="profile-container">
+            <img
+              src="/assets/channel/channel-10.jpg"
+              alt=""
+              class="channel-profile"
+            />
+          </div>
+          <div class="info-container">
+            <p class="description">
+              1 Year of Coding in 5 Minutes (Computer Science First Year)
+            </p>
+            <div class="name-container">
+              <p class="channel-name">Frying Pan</p>
+            </div>
+
+            <div class="stat-container">
+              <p class="views">2.9M views</p>
+              <p class="dot">&#183;</p>
+              <p class="time">1 year ago</p>
+            </div>
+          </div>
+          <img src="/assets/icons/options.png" alt="" class="options" />
+        </div>
+      </div>
+
+      <!-- -------------------- video item 11 -------------------- -->
+      <div class="video-item">
+        <div class="thumbnail-container">
+          <img
+            src="/assets/thumbnails/thumbnail-11.png"
+            alt=""
+            class="thumbnail"
+          />
+          <div class="duration">31:26</div>
+          <div class="thumb-tooltip">Keep hovering to play</div>
+        </div>
+        <div class="video-info-container">
+          <div class="profile-container">
+            <img
+              src="/assets/channel/channel-11.jpg"
+              alt=""
+              class="channel-profile"
+            />
+          </div>
+          <div class="info-container">
+            <p class="description">Parallelize Python Tasks with Joblib</p>
+            <div class="name-container">
+              <p class="channel-name">NeuralNine</p>
+            </div>
+
+            <div class="stat-container">
+              <p class="views">2.5K views</p>
+              <p class="dot">&#183;</p>
+              <p class="time">2 days ago</p>
+            </div>
+          </div>
+          <img src="/assets/icons/options.png" alt="" class="options" />
+        </div>
+      </div>
+
+      <!-- -------------------- video item 12 -------------------- -->
+      <div class="video-item">
+        <div class="thumbnail-container">
+          <img
+            src="/assets/thumbnails/thumbnail-12.png"
+            alt=""
+            class="thumbnail"
+          />
+          <div class="duration">1:29:09</div>
+          <div class="thumb-tooltip">Keep hovering to play</div>
+        </div>
+        <div class="video-info-container">
+          <div class="profile-container">
+            <img
+              src="/assets/channel/channel-12.jpg"
+              alt=""
+              class="channel-profile"
+            />
+          </div>
+          <div class="info-container">
+            <p class="description">
+              CS50P - Lecture 8 - Object-Oriented Programming
+            </p>
+            <div class="name-container">
+              <p class="channel-name">CS50</p>
+              <img src="/assets/icons/verified.png" alt="" class="verified" />
+            </div>
+
+            <div class="stat-container">
+              <p class="views">36K views</p>
+              <p class="dot">&#183;</p>
+              <p class="time">5 days ago</p>
+            </div>
+          </div>
+          <img src="/assets/icons/options.png" alt="" class="options" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
