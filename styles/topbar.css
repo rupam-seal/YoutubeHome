@@ -1,0 +1,295 @@
+/* ------------------ Top bar ------------------ */
+.top-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px 0px 16px;
+  margin: 0px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: white;
+  height: 56px;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(219, 219, 219);
+  border-bottom-style: solid;
+  z-index: 1000;
+}
+
+/* ------------------ Start (topbar left item) ------------------ */
+.top-bar-left-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* hemburger menu */
+.icon-hamburger-menu {
+  height: 24px;
+  padding: 8px 8px 8px 8px;
+  cursor: pointer;
+}
+
+/* left item youtube logo container */
+.yt-logo-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 129px;
+}
+
+/* youtube logo item */
+.yt-logo-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 18px 14px 16px 18px;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+/* country code */
+.country-code {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  right: 0;
+  font-size: 10px;
+  top: 0;
+  margin-top: 12px;
+  color: rgb(89, 89, 89);
+}
+
+/* youtube logo */
+.yt-logo {
+  height: 20px;
+  width: 90px;
+}
+
+/* ------------------ Middle (topbar middle item) ------------------ */
+.top-bar-middle-container {
+  flex: 1;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 728px;
+}
+
+/* top bar middle item */
+.middle-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+}
+
+/* search box container */
+.search-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  margin-left: 36px;
+  margin-right: 10px;
+}
+
+/* search input container */
+.input-container {
+  flex: 1;
+  display: flex;
+  height: 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(211, 211, 211);
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-right-width: 0px;
+}
+
+/* input search */
+.input-search {
+  flex: 1;
+  width: 0;
+  border-style: none;
+  padding: 2px 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* search box button container */
+.btn-search-container {
+  display: flex;
+  width: 64px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(211, 211, 211);
+}
+
+/* button search */
+.btn-search {
+  height: 40px;
+  width: 64px;
+  border-style: none;
+  padding: 1px 6px;
+  background-color: rgb(248, 248, 248);
+  cursor: pointer;
+}
+
+/* button search image */
+.img-search {
+  width: 24px;
+  height: 24px;
+}
+
+/* button voice */
+.btn-voice {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  border-radius: 20px;
+  background-color: rgb(247, 247, 247);
+  cursor: pointer;
+}
+
+/* button voice image */
+.img-voice {
+  width: 24px;
+  height: 24px;
+}
+
+/* ------------------ End (topbar right item) ------------------ */
+.top-bar-right-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 225px;
+}
+
+/* item container */
+.right-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 156px;
+  height: 40px;
+}
+
+/* upload and notification container */
+.right-icon {
+  padding: 8px;
+}
+
+/* channal container */
+.right-icon-channal {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  padding: 1px 6px;
+}
+
+/* upload */
+.icon-upload {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* notifications */
+.icon-notifications {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* my-channale */
+.my-channal {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+/* ------------- PSEUDO CLASSES ---------------- */
+
+/* input search when focus */
+.input-search:focus {
+  outline-style: solid;
+  outline-color: rgb(128, 128, 255);
+  outline-width: 1px;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.15s;
+}
+
+/* button search hover effect */
+.btn-search:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+/* outline none when element focused */
+.btn-search:focus,
+.my-channal:focus,
+.voice-container:focus,
+.right-icon-channal:focus,
+.btn-voice:focus {
+  outline: none;
+}
+
+/* Tooltip */
+.yt-logo-container,
+.btn-search,
+.right-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.yt-logo-container .tooltip,
+.btn-search .tooltip,
+.btn-voice .tooltip,
+.right-icon .tooltip {
+  position: absolute;
+  background-color: rgb(117, 117, 117);
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  bottom: -45px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.yt-logo-container:hover .tooltip,
+.btn-search:hover .tooltip,
+.btn-voice:hover .tooltip,
+.right-icon:hover .tooltip {
+  opacity: 1;
+}
+
+/* for responsiveness
+   when width is 550px
+   padding and margin of search box decreased
+*/
+@media (max-width: 550px) {
+  .middle-item {
+    padding-left: 0px;
+  }
+  .search-container {
+    margin-left: 10px;
+  }
+}
